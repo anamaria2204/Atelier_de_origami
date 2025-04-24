@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.atelier_de_origami.SignUpView">
+   <children>
+      <VBox spacing="10" alignment="CENTER" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label text="Want to learn the art of folding paper?" />
+            <Label text="This is your chance:" />
+            <HBox alignment="CENTER" prefHeight="30.0" prefWidth="200.0" spacing="20">
+               <children>
+                  <Label text="Name:" />
+                  <TextField />
+               </children></HBox>
+            <HBox alignment="CENTER" prefHeight="30.0" prefWidth="200.0" spacing="20">
+               <children>
+                  <Label text="Surname:" />
+                  <TextField />
+               </children></HBox>
+            <HBox alignment="CENTER" prefHeight="30.0" prefWidth="200.0" spacing="20">
+               <children>
+                  <Label text="Email:" />
+                  <TextField />
+               </children></HBox>
+            <HBox alignment="CENTER" prefHeight="30.0" prefWidth="200.0" spacing="20">
+               <children>
+                  <Label text="Telephone number:" />
+                  <TextField />
+               </children></HBox>
+            <HBox alignment="CENTER" prefHeight="30.0" prefWidth="200.0" spacing="20">
+               <children>
+                  <Label text="Age:" />
+                  <TextField />
+               </children></HBox>
+            <HBox alignment="CENTER" prefHeight="30.0" prefWidth="200.0" spacing="20">
+               <children>
+                  <Label text="Experience:" />
+                  <ComboBox prefWidth="150.0" />
+               </children></HBox>
+            <HBox alignment="CENTER" prefHeight="30.0" prefWidth="200.0" spacing="20">
+               <children>
+                  <Button mnemonicParsing="false" text="Submit" />
+               </children>
+            </HBox>
+         </children></VBox>
+
+   </children>
+</AnchorPane>
