@@ -1,11 +1,20 @@
 package atelier.atelier_de_origami.domain;
 
-public class User<ID> extends Entity<Integer> {
+public class User<ID> {
 
+    private ID id;
     private String username;
     private String password;
 
-    public User(int id, String username, String password) {
+    public ID getId() {
+        return id;
+    }
+
+    public void setId(ID id) {
+        this.id = id;
+    }
+
+    public User(ID id, String username, String password) {
         setId(id);
         this.username = username;
         this.password = password;

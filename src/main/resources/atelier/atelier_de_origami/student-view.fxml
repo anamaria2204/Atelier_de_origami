@@ -3,15 +3,15 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane prefHeight="400.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.atelier_de_origami.StudentView">
+<AnchorPane prefHeight="450.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="atelier.atelier_de_origami.controller.StudentController">
    <children>
       <SplitPane dividerPositions="0.4" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
         <items>
           <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
                <children>
-                  <VBox alignment="CENTER" spacing="20" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                  <VBox alignment="CENTER" prefHeight="400.0" prefWidth="356.0" spacing="20" AnchorPane.bottomAnchor="-2.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                      <children>
-                        <Label text="Welcome, (student name) !" />
+                        <Label fx:id="labelStudent" />
                         <HBox alignment="CENTER" prefHeight="40.0" prefWidth="200.0" spacing="20">
                            <children>
                               <Label text="Choose one available course from table: " />
@@ -42,6 +42,12 @@
                               <TextField />
                            </children></HBox>
                         <Button mnemonicParsing="false" text="Delete" />
+                        <HBox alignment="CENTER" prefHeight="38.0" prefWidth="300.0" spacing="20">
+                           <children>
+                              <Label text="Want to logout?" />
+                              <Button mnemonicParsing="false" text="Logout" />
+                           </children>
+                        </HBox>
                      </children></VBox>
                </children></AnchorPane>
           <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
@@ -53,7 +59,7 @@
                               <TableView AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="20.0">
                                <columns>
                       <TableColumn prefWidth="75.0" text="Name" />
-                      <TableColumn prefWidth="75.0" text="Description" />
+                      <TableColumn prefWidth="75.0" text="Duartion" />
                         <TableColumn prefWidth="75.0" text="Date" />
                         <TableColumn prefWidth="75.0" text="Price" />
                         <TableColumn prefWidth="75.0" text="Teacher" />
@@ -71,7 +77,7 @@
                               <TableView AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="20.0">
                                 <columns>
                       <TableColumn prefWidth="75.0" text="Name" />
-                      <TableColumn prefWidth="75.0" text="Description" />
+                      <TableColumn prefWidth="75.0" text="Duartion" />
                         <TableColumn prefWidth="75.0" text="Date" />
                         <TableColumn prefWidth="75.0" text="Price" />
                         <TableColumn prefWidth="75.0" text="Teacher" />
